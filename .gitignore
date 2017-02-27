@@ -1,0 +1,9 @@
+*.csv
+*.sav
+*.xlsx
+*.xls
+*.dat
+*.txt
+*.rds
+*.RDS
+/data
