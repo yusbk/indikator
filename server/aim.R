@@ -3,6 +3,8 @@ output$aimplot <- renderPlot({
 
     source("./codes/aim.R", local = TRUE)
     dataim <- readRDS("./data/bdraim.RDS")
+    Encoding(dataim$Variabel) <- "latin1"
+    Encoding(dataim$file) <- "latin1"
     dataim$Andel <- as.integer(dataim$Andel)
 
     source("./codes/mutate-when.R")
